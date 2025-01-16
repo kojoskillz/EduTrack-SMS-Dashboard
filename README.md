@@ -1,4 +1,4 @@
-# Lama Dev School Management Dashboard
+# Edutrack School Management Dashboard
 
 ## Getting Started
 
