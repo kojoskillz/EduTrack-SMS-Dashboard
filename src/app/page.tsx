@@ -95,7 +95,7 @@ import { Link } from 'react-router-dom';
 
 // Import your pages or components
 // import Homepage1 from './(dashboard)/admin/page';
-
+// import AdminPage from './(dashboard)/admin/page';
 // import About from './About';
 // import Contact from './Contact';
 
@@ -109,9 +109,9 @@ const Homepage = () => {
         </button>
 
         {/* Define your routes */}
-        <Routes>
-          <Route path="./admin" element={<Homepage />} />
-        </Routes>
+        {/* <Routes>
+          <Route path="/admin" element={<Homepage />} />
+        </Routes> */}
       </div>
     </Router>
   );
