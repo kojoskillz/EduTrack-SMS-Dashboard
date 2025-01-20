@@ -98,10 +98,11 @@ import React from "react";
 import Link from "next/link";
 
 export default function Homepage({
- 
+  children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) 
+{
   return (
     <div className="h-screen flex">
     
@@ -117,3 +118,5 @@ export default function Homepage({
     </div>
   );
 }
+
+
