@@ -94,7 +94,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 // Import your pages or components
-import Homepage1 from './(dashboard)/admin/page';
+// import Homepage1 from './(dashboard)/admin/page';
 
 // import About from './About';
 // import Contact from './Contact';
