@@ -87,34 +87,33 @@
 // }
 
 // export default Homepage;
-'use client'
 
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
-// Import your pages or components
-// import Homepage1 from './(dashboard)/admin/page';
-// import AdminPage from './(dashboard)/admin/page';
-// import About from './About';
-// import Contact from './Contact';
 
-const Homepage = () => {
-  return ( 
-    <Router>
-      <div>
-        {/* Define links for navigation */}
-        <button>
-              <Link to="./admin">Admin</Link>
-        </button>
+// App.js
 
-        {/* Define your routes */}
-        {/* <Routes>
-          <Route path="/admin" element={<Homepage />} />
-        </Routes> */}
+"use client"
+
+import React from "react";
+import Link from "next/link";
+
+export default function Homepage({
+ 
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <div className="h-screen flex">
+    
+      <div className="">
+        <Link
+          href="./admin "
+          className=""
+        >  
+             <button type="submit" className="bg-blue-300 p-2 m-5 rounded-md text-white ">Admin</button>
+        </Link>
       </div>
-    </Router>
+   
+    </div>
   );
-};
-
-export default Homepage;
+}
