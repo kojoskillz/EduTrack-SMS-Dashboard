@@ -92,31 +92,41 @@
 
 // App.js
 
-"use client"
+// 
 
-import React from "react";
+// import React from "react";
+
+
+// export default function Homepage({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) 
+// {
+//   return (
+//   
+//   );
+// }
+
+"use client"
+import React from 'react'
 import Link from "next/link";
 
-export default function Homepage({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) 
-{
+const Homepage = () => {
   return (
     <div className="h-screen flex">
     
-      <div className="">
-        <Link
-          href="./admin "
-          className=""
-        >  
-             <button type="submit" className="bg-blue-300 p-2 m-5 rounded-md text-white ">Admin</button>
-        </Link>
-      </div>
-   
-    </div>
-  );
+          <div className="">
+             <Link
+               href="./admin "
+               className=""
+             >  
+                  <button type="submit" className="bg-blue-300 p-2 m-5 rounded-md text-white ">Admin</button>
+             </Link>
+          </div>
+       
+         </div>
+  )
 }
 
-
+export default Homepage
