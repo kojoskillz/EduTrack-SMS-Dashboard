@@ -96,17 +96,21 @@ import Image from "next/image"
 
 const Homepage = () => {
   return (
-    <div className="h-screen scroll-y-hidden  bg-blue-900">
-        <h1 className='text-white font-semibold lg:text-5xl text-5xl  text-center pt-20 lg:pt-6'>
-           Welcome to Edutrack
-        </h1>
+    <div className="h-screen lg:h-screen textstyle  scroll-y-hidden  bg-blue-900">
+         <div className='place-content-center m-auto grid pt-28 lg:pt-6 '>
+                <Image src="/graduation-hat.png" alt="" width={50} height={20} className='m-auto place-content-center' />
+                <h1 className='text-white font-semibold lg:text-5xl text-3xl  text-center '>
+                  EduTrack
+                </h1>
+         </div>
+       
 
        <div className='grid place-content-center '>
   
             <div>
-                <Image src="/img1.png" alt="" width={500} height={500} className='lg:flex' />
+                <Image src="/img1.png" alt="" width={450} height={500} className='lg:flex' />
             </div>
- <hr className='opacity-30 w-[18rem] lg:w-[26rem] place-content-center m-auto ' />
+ {/* <hr className='opacity-30 w-[18rem] lg:w-[26rem] place-content-center m-auto ' /> */}
             <div className='flex m-auto '>
             {/* try-demo */}
             <div className=" ">
@@ -114,7 +118,7 @@ const Homepage = () => {
                           href="./admin "
                           className=""
                         >  
-                              <button type="submit" className="bg-blue-400 text-bold hover:bg-blue-500 uppercase p-2 m-5 w-56 rounded-sm text-white ">Try Demo</button>
+                              <button type="submit" className="bg-blue-400 text-bold hover:bg-blue-500 uppercase p-2 m-5 w-40 rounded-sm text-white ">Try Demo</button>
                         </Link>
                       </div>
               
