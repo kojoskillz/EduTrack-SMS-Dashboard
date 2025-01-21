@@ -89,43 +89,53 @@
 // export default Homepage;
 
 
-
-// App.js
-
-// 
-
-// import React from "react";
-
-
-// export default function Homepage({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) 
-// {
-//   return (
-//   
-//   );
-// }
-
 "use client"
 import React from 'react'
 import Link from "next/link";
+import Image from "next/image"
 
 const Homepage = () => {
   return (
-    <div className="h-screen flex">
-    
-          <div className="">
-             <Link
-               href="./admin "
-               className=""
-             >  
-                  <button type="submit" className="bg-blue-300 p-2 m-5 rounded-md text-white ">Admin</button>
-             </Link>
-          </div>
-       
-         </div>
+    <div className="h-screen bg-blue-800">
+        <h1 className='text-white font-semibold lg:text-5xl text-5xl  text-center pt-20 lg:pt-6'>
+           Welcome to Edutrack
+        </h1>
+
+       <div className='grid place-content-center '>
+  
+            <div>
+                <Image src="/img1.png" alt="" width={500} height={500} className='lg:flex' />
+            </div>
+ <hr className='opacity-30 w-[18rem] lg:w-[26rem] place-content-center m-auto ' />
+            <div className='flex m-auto '>
+            {/* try-demo */}
+            <div className=" ">
+                        <Link
+                          href="./admin "
+                          className=""
+                        >  
+                              <button type="submit" className="bg-blue-400 text-bold hover:bg-blue-500 uppercase p-2 m-5 w-56 rounded-sm text-white ">Try Demo</button>
+                        </Link>
+                      </div>
+              
+                      {/* sign-in */}
+                      {/* <div className=" ">
+                        <Link
+                          href="./admin "
+                          className=""
+                        >  
+                              <button type="submit" className="bg-blue-300 p-2 m-5 rounded-md text-white ">Sign-In</button>
+                        </Link>
+                      </div> */}
+            </div>
+         
+         
+        </div>
+
+
+
+
+     </div>
   )
 }
 
