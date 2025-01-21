@@ -96,7 +96,7 @@ import Image from "next/image"
 
 const Homepage = () => {
   return (
-    <div className="h-screen bg-blue-900">
+    <div className="h-screen scroll-y-hidden  bg-blue-900">
         <h1 className='text-white font-semibold lg:text-5xl text-5xl  text-center pt-20 lg:pt-6'>
            Welcome to Edutrack
         </h1>
