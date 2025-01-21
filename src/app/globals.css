@@ -163,14 +163,14 @@
   }
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
 
 .textstyle{
   font-family:Verdana, Geneva, Tahoma, sans-serif
